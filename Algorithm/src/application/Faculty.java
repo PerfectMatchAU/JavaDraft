@@ -143,35 +143,35 @@ public class Faculty {
 		return applicants;
 	}
 	/**
-	 * 
-	 * @param applicants
+	 * the setter applicants
+	 * @param applicants new list of applicants for faculty
 	 */
 	public void setApplicants(ArrayList<Applicant> applicants) {
 		this.applicants.clear();
 		this.applicants = (ArrayList) applicants.clone();
 	}
 	/**
-	 * 
-	 * @param _newApplicant
-	 * @return
+	 * the function adds new applicant to list
+	 * @param _newApplicant - new applicant
+	 * @return true, if it was able to update; false, otherwise
 	 */
 	public boolean addApplicant(Applicant _newApplicant) {
 		this.applicants.add(_newApplicant);
 		return true;
 	}
 	/**
-	 * 
-	 * @param _oldApplicant
-	 * @return
+	 * the function removes applicant to list
+	 * @param _oldApplicant - applicant that we need remove
+	 * @return true, if it was able to update; false, otherwise
 	 */
 	public boolean removeApplicant(Applicant _oldApplicant) {
 		this.applicants.remove(_oldApplicant);
 		return true;
 	}
 	/**
-	 * 
-	 * @param _course
-	 * @param _grade
+	 * the update minGrades
+	 * @param _course - name of course
+	 * @param _grade - grade of course
 	 * @return true, if it was able to update; false, otherwise
 	 */
 	public boolean updateMinGrades(String _course, int _grade) {
@@ -179,9 +179,9 @@ public class Faculty {
 		return true;
 	}
 	/**
-	 * 
-	 * @param _course
-	 * @param _weight
+	 * the update formulaWeights
+	 * @param _course - name of course
+	 * @param _weight - weight of course
 	 * @return true, if it was able to update; false, otherwise
 	 */
 	public boolean updateFormulaWeights(String _course, int _weight) {
